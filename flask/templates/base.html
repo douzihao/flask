@@ -1,10 +1,10 @@
 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 {% extends "bootstrap/base.html"  %}
+{% block title %}Flask{% endblock %}
 <!--base.html模板继承自bootstrap/base.html-->
 <!--其中title、navbar、content都是bootstrap/base.html中定义的块（还有script等)
 navbar是显示导航栏。其中的代码比较多，作用是添加Flasky和Home两个链接，理解下即可。-->
-{% block title %}Flask{% endblock %}
-
 {% block navbar %}
 <div class="navbar navbar-inverse" role="navigation">
     <div class="container">
@@ -25,11 +25,9 @@ navbar是显示导航栏。其中的代码比较多，作用是添加Flasky和Ho
     </div>
 </div>
 {% endblock %}
-
- {% block content %}
+{% block content %}
 <div class="container"></div>
 {% block page_content %}
 {% endblock %}
 {% endblock %}
-<!--page_content块是自己加的。-->
-<!--注意下方block script-->
+
