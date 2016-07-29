@@ -32,6 +32,7 @@ navbar是显示导航栏。其中的代码比较多，作用是添加Flasky和Ho
     {% block scripts %}
         {{ super() }}
         {{ moment.include_moment() }}
+        <!-- moment.include_moment()：引入moment.js，请注意上方的{{  super() }}-->
     {% endblock %}
 {% endblock %}
 
