@@ -25,21 +25,27 @@ def index():
     #return '<p> your browser is %s </p>' %user_agent
     #return '<h1> hello world!</h1>'
 
+
 @app.route('/testtem/<value>')
 def testtem(value):
-    return render_template("page.html")
+    #return render_template("page.html")
+    return render_template("page.html",current_time=datetime.utcnow())
+
 
 @app.route('/ss/<kw>')
 def ss(kw):
     return redirect("http://www.baidu.com")
 
+
 @app.route('/user/<name>')
 def user(name):
     return '<h1>Hello,%s!</h1>' %name
 
+
 @app.route('/red')
 def red():
     return redirect("http://www.baidu.com")
+
 
 @app.route('/get_user/<id>')
 def get_user(id):
