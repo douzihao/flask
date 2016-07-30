@@ -9,10 +9,10 @@
             <h1>Hello Stranger!</h1>
         {% endif %}
 
-        <form method="POST">
-            {{ form.hidden_tag() }}
-            {{ form.name.label  }} {{ form.name() }}
-            {{ form.submit() }}
-        </form>
+        <form method="POST" action="/">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+    <input type="submit" value="Go">
+</form>
     </body>
 </html>
